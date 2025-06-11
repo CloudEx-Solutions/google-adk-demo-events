@@ -1,0 +1,25 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.88.0  # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_validate
+    - id: terraform_tflint
+    - id: terraform_docs
+    - id: terraform_checkov
+      args:
+      - --args=--framework terraform
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0 # Get the latest from: https://github.com/pre-commit/pre-commit-hooks/releases
+  hooks:
+    - id: check-added-large-files
+    - id: fix-byte-order-marker
+    - id: check-merge-conflict
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-symlinks
+    - id: check-json
+    - id: pretty-format-json
+      args:
+          - "--autofix" 
+          - "--indent=4"

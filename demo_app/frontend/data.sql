@@ -1,0 +1,2 @@
+TRUNCATE TABLE `corporate_events.inventory`;
+INSERT INTO `corporate_events.inventory` ( product_id, product_name, product_count, product_description, product_image_url) values('baloons','Colorful baloons', 1000, 'Beautiful helium baloons', NULL), ('soft_drink', 'Soft Drinks', 200, 'Bottles of soft drinks', 'https://alcohome.co.il/wp-content/uploads/2023/06/%D7%A2%D7%99%D7%9F-0.5-%D7%9C%D7%99%D7%98%D7%A8-510x510.jpg'),('cookies','Cookies',500,'Yummy cookies', NULL);

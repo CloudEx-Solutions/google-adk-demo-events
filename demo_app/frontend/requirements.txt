@@ -1,0 +1,4 @@
+streamlit=~1.45
+streamlit_autorefresh=~1.0
+google-cloud-bigquery=~3.34
+db-dtypes~=1.4.3

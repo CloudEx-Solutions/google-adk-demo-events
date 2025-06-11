@@ -1,0 +1,26 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "googlecloudtools.cloudcode"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers-extra/features/checkov:1": {},
+        "ghcr.io/devcontainers-extra/features/pre-commit:2": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/dhoeric/features/google-cloud-cli:1": {},
+        "ghcr.io/dhoeric/features/terraform-docs:1": {},
+        "ghcr.io/joshuanianji/devcontainer-features/gcloud-cli-persistence:1": {},
+        "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {}
+    },
+    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "name": "Google ADK Demo",
+    "postCreateCommand": "pre-commit install && pip install google-adk --break-system-packages && pip install -r demo_app/frontend/requirements.txt --break-system-packages && pip install -r demo_app/backend/requirements.txt --break-system-packages",
+    "remoteUser": "root"
+}
