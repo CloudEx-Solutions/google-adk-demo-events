@@ -21,6 +21,5 @@
     },
     "image": "mcr.microsoft.com/devcontainers/base:noble",
     "name": "Google ADK Demo",
-    "postCreateCommand": "pre-commit install && pip install google-adk --break-system-packages && pip install -r demo_app/frontend/requirements.txt --break-system-packages && pip install -r demo_app/backend/requirements.txt --break-system-packages",
-    "remoteUser": "root"
+    "postCreateCommand": "pre-commit install && pip install google-adk --break-system-packages && pip install -r demo_app/frontend/requirements.txt --break-system-packages && pip install -r demo_app/backend/requirements.txt --break-system-packages"
 }
