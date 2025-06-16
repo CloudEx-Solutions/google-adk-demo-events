@@ -4,11 +4,12 @@ from google.adk.agents import Agent, SequentialAgent
 from .agents.inventory import inventory_agent
 from .agents.suggestor import suggestor_agent
 from .agents.checkout import checkout_agent
+from google.adk.tools.agent_tool import AgentTool
 
 logger = logging.getLogger(__name__)
 
 root_agent = Agent(
-    model='gemini-2.0-flash-live-preview-04-09',
+    model='gemini-2.0-flash',
     name='root_agent',
     description='An agent which can plan and run events, supported by subagents.',
     sub_agents=[suggestor_agent, checkout_agent],
